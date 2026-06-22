@@ -79,7 +79,7 @@
                 <span class="badge" style="position: static; background-color: #4A6FFF; color: white; padding: 2px 10px; border-radius: 20px; font-size: 12px;">Sale</span>
                     </div>
 
-        <form action="cart.html" method="POST">
+        <form action="cart.html" method="GET">
             <input type="hidden" name="action" value="add">
             <input type="hidden" name="product_id" value="1">
             
@@ -261,7 +261,7 @@
                             <span class="new-price" style="font-size: 14px; color: #000;">Rs. 399.00</span>
                                             </div>
                 </a>
-                <form action="cart.html" method="POST">
+                <form action="cart.html" method="GET">
                     <input type="hidden" name="action" value="add">
                     <input type="hidden" name="product_id" value="2">
                     <input type="hidden" name="quantity" value="1">
@@ -280,7 +280,7 @@
                             <span class="new-price" style="font-size: 14px; color: #000;">Rs. 799.00</span>
                                             </div>
                 </a>
-                <form action="cart.html" method="POST">
+                <form action="cart.html" method="GET">
                     <input type="hidden" name="action" value="add">
                     <input type="hidden" name="product_id" value="3">
                     <input type="hidden" name="quantity" value="1">
@@ -310,7 +310,7 @@
             <input type="text" id="sticky-qty" class="qty-input" value="1" readonly>
             <button type="button" class="qty-btn" onclick="document.getElementById('sticky-qty').value = parseInt(document.getElementById('sticky-qty').value) + 1">+</button>
         </div>
-        <form action="cart.html" method="POST" style="margin: 0;">
+        <form action="cart.html" method="GET" style="margin: 0;">
             <input type="hidden" name="action" value="add">
             <input type="hidden" name="product_id" value="1">
             <input type="hidden" name="quantity" value="1" id="sticky-form-qty">
@@ -345,7 +345,7 @@
         </div>
         <div class="footer-col">
             <h5>Subscribe to our emails</h5>
-            <form action="subscribe.html" method="POST" style="position: relative;">
+            <form action="subscribe.html" method="GET" style="position: relative;">
                 <input type="email" name="email" placeholder="Email" required style="padding-right: 40px;">
                 <button type="submit" style="position: absolute; right: 10px; top: 10px; background: none; border: none; cursor: pointer; color: var(--text-dark);">
                     <i class="fas fa-arrow-right"></i>
