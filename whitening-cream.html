@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5Five Tune - Premium Skincare & Beauty</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div style="background-color: #318000; color: white; padding: 8px 0; overflow: hidden; white-space: nowrap;">
+    <marquee behavior="scroll" direction="left" scrollamount="6" style="font-size: 13px; font-weight: 600; letter-spacing: 1px;">
+        ðŸš€ PAY ONLINE AND GET FREE SHIPPING ON ALL ORDERS! ðŸš€
+    </marquee>
+</div>
+<header class="site-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/logo.jpeg" alt="5Five Tune Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="track.html">Track Order</a></li>
+                <li><a href="how-to-use.html">How To Use</a></li>
+                <li><a href="shop.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="login.html"><i class="far fa-user"></i></a>
+                        <a href="cart.html" style="position: relative;">
+                <i class="fas fa-shopping-bag"></i>
+                <span style="position: absolute; top: -8px; right: -10px; background-color: var(--primary-green); color: white; font-size: 10px; width: 16px; height: 16px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: bold;">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<div class="product-details-container">
+    <!-- Left: Image Gallery -->
+    <div class="product-gallery">
+                    <img src="assets/images/product1.jpeg" alt="5Five Tune Whitening Cream">
+                    <img src="assets/images/product2.jpeg" alt="5Five Tune Whitening Cream">
+            </div>
+
+    <!-- Right: Product Info & Add to Cart -->
+    <div class="product-info">
+        <!-- Review Stars Mock -->
+        <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>28270 reviews</span>
+        </div>
+
+        <h1>5Five Tune Whitening Cream</h1>
+
+        <div class="product-price-section">
+                            <span class="old-price" style="text-decoration: line-through; color: var(--text-muted);">Rs. 899.00</span>
+                <span class="new-price" style="font-weight: bold; font-size: 24px;">Rs. 799.00</span>
+                <span class="badge" style="position: static; background-color: #4A6FFF; color: white; padding: 2px 10px; border-radius: 20px; font-size: 12px;">Sale</span>
+                    </div>
+
+        <form action="cart.html" method="POST">
+            <input type="hidden" name="action" value="add">
+            <input type="hidden" name="product_id" value="3">
+            
+            <div style="font-size: 12px; margin-bottom: 5px; color: var(--text-muted);">Quantity</div>
+            <div class="qty-selector">
+                <button type="button" class="qty-btn" onclick="document.getElementById('qty').value = Math.max(1, parseInt(document.getElementById('qty').value) - 1)">-</button>
+                <input type="text" name="quantity" id="qty" class="qty-input" value="1" readonly>
+                <button type="button" class="qty-btn" onclick="document.getElementById('qty').value = parseInt(document.getElementById('qty').value) + 1">+</button>
+            </div>
+
+            <div class="product-actions">
+                <button type="submit" class="btn btn-outline" style="border-radius: 30px;">Add to cart</button>
+                <button type="button" class="btn btn-solid" style="border-radius: 30px;" onclick="window.location.href='checkout.php'">Buy It Now</button>
+            </div>
+        </form>
+
+        <!-- Accordions -->
+        <details>
+            <summary><span style="display:flex; align-items:center; gap:10px;"><i class="fas fa-box-open"></i> What's in the kit</span></summary>
+            <div class="accordion-content">
+                <ul>
+                    <li>1x Vitamin C Facewash (75ml)</li>
+                    <li>1x Whitening Cream (50g)</li>
+                    <li>1x Vitamin E Sunscreen + Moisturizer (75ml)</li>
+                </ul>
+            </div>
+        </details>
+
+        <details open>
+            <summary><span style="display:flex; align-items:center; gap:10px;"><i class="far fa-question-circle"></i> How to use</span></summary>
+            <div class="accordion-content">
+                <strong>Day Routine</strong>
+                <ol style="margin-left: 20px; margin-bottom: 15px; margin-top: 5px;">
+                    <li>Wash Your Face With 5Five Tune Vitamin C Facewash.</li>
+                    <li>Pat dry your face with a clean towel.</li>
+                    <li>Take required amount of 5Five Tune Sunscreen + Moisturizer and apply it evenly to your face and exposed areas.</li>
+                </ol>
+                <strong>Night Routine</strong>
+                <ol style="margin-left: 20px; margin-top: 5px;">
+                    <li>Wash Your Face With 5Five Tune Vitamin C Facewash and dry your face.</li>
+                    <li>Apply 5Five Tune Whitening cream evenly to your face.</li>
+                    <li>Wash your face with 5Five Tune Facewash on using water.</li>
+                </ol>
+            </div>
+        </details>
+
+        <details>
+            <summary><span style="display:flex; align-items:center; gap:10px;"><i class="fas fa-truck"></i> Free shipping</span></summary>
+            <div class="accordion-content">
+                Enjoy free shipping on all orders across India. Delivery takes 3-5 business days.
+            </div>
+        </details>
+
+        <details>
+            <summary><span style="display:flex; align-items:center; gap:10px;"><i class="fas fa-undo"></i> Return policy</span></summary>
+            <div class="accordion-content">
+                We have a 7-day return policy for unopened and unused products. Contact support for more details.
+            </div>
+        </details>
+
+        <!-- Description Text -->
+        <div class="product-description-text">
+            <span style="color: var(--primary-green);">Skincare Kit</span> â€“ Three essentials for a bright you! Start with our Whitening Cream for a bright and even complexion. Wake up your face with the Vitamin C Facewash â€“ it's like a burst of freshness! Finish with the Vitamin E Sunscreen + Moisturizer to protect your skin every day. Easy to use, great results.
+        </div>
+
+        <a href="#" class="share-link">
+            <i class="fas fa-share-square"></i> Share
+        </a>
+
+        <!-- Reviews Section -->
+        <div class="customer-reviews-section">
+            <div class="reviews-header">
+                <h2 style="font-size: 24px; margin-bottom: 10px;">Customer Reviews</h2>
+                <div class="review-stars" style="font-size: 16px;">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <span style="color: #ffb400; font-weight: 500; margin-left: 10px;">4.74 out of 5</span>
+                </div>
+                <div style="font-size: 13px; color: var(--text-muted);">Based on 28270 reviews <i class="fas fa-check-square" style="color:var(--primary-green);"></i></div>
+                
+                <div class="rating-bars">
+                    <div class="rating-row">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <div class="rating-bar-container"><div class="rating-bar-fill" style="width: 76%;"></div></div>
+                        <div style="width: 40px; text-align: right; color: var(--text-muted);">21469</div>
+                    </div>
+                    <div class="rating-row">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></div>
+                        <div class="rating-bar-container"><div class="rating-bar-fill" style="width: 23%;"></div></div>
+                        <div style="width: 40px; text-align: right; color: var(--text-muted);">6470</div>
+                    </div>
+                    <div class="rating-row">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                        <div class="rating-bar-container"><div class="rating-bar-fill" style="width: 1%;"></div></div>
+                        <div style="width: 40px; text-align: right; color: var(--text-muted);">248</div>
+                    </div>
+                    <div class="rating-row">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                        <div class="rating-bar-container"><div class="rating-bar-fill" style="width: 0%;"></div></div>
+                        <div style="width: 40px; text-align: right; color: var(--text-muted);">80</div>
+                    </div>
+                    <div class="rating-row">
+                        <div class="stars"><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></div>
+                        <div class="rating-bar-container"><div class="rating-bar-fill" style="width: 0%;"></div></div>
+                        <div style="width: 40px; text-align: right; color: var(--text-muted);">3</div>
+                    </div>
+                </div>
+
+                <button class="btn" style="background-color: #ff9900; color: white; border: none; width: 100%; max-width: 400px; padding: 12px; margin-top: 10px;">Write a review</button>
+            </div>
+
+            <div style="font-size: 14px; margin-bottom: 15px;">Customer photos & videos</div>
+            <div style="display: flex; gap: 10px; margin-bottom: 30px; overflow-x: auto;">
+                <img src="assets/images/product1.jpeg" style="width: 80px; height: 80px; object-fit: cover; border-radius: 5px;">
+                <img src="assets/images/product2.jpeg" style="width: 80px; height: 80px; object-fit: cover; border-radius: 5px;">
+            </div>
+
+            <!-- Review Items -->
+                        <div class="review-item">
+                <div style="display: flex; justify-content: space-between; align-items: start;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <div style="font-size: 12px; color: var(--text-muted);">06/16/2026</div>
+                </div>
+                <div class="reviewer-name">
+                    <i class="far fa-user-circle" style="font-size: 20px; color: #ff9900;"></i> Nidhi Chauhan <span class="verified-badge">Verified</span>
+                </div>
+                <div class="review-title">Good Product</div>
+                <div class="review-body">Its a very good product. I can see lighten up pigmentation spots in just 7 days use.</div>
+            </div>
+                        <div class="review-item">
+                <div style="display: flex; justify-content: space-between; align-items: start;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <div style="font-size: 12px; color: var(--text-muted);">06/10/2026</div>
+                </div>
+                <div class="reviewer-name">
+                    <i class="far fa-user-circle" style="font-size: 20px; color: #ff9900;"></i> Naiela Omer <span class="verified-badge">Verified</span>
+                </div>
+                <div class="review-title">It helped a lot</div>
+                <div class="review-body">This is my second purchase ftune and I am happy with it. The night cream works like magic and now the day cream and facewash is also helping a lot.</div>
+            </div>
+                        <div class="review-item">
+                <div style="display: flex; justify-content: space-between; align-items: start;">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <div style="font-size: 12px; color: var(--text-muted);">06/09/2026</div>
+                </div>
+                <div class="reviewer-name">
+                    <i class="far fa-user-circle" style="font-size: 20px; color: #ff9900;"></i> Abi B <span class="verified-badge">Verified</span>
+                </div>
+                <div class="review-title">part of my skincare routine</div>
+                <div class="review-body">This combo became part of my morning routine now. Skin feels cleaner, brighter and protected throughout the day</div>
+            </div>
+                    </div>
+    </div>
+</div>
+
+<!-- Featured Collection (Other Products) -->
+<section class="collection-section" style="padding: 60px 40px; max-width: 1400px; margin: 0 auto; border-top: 1px solid #eee;">
+    <h2 class="section-title" style="text-align: left; font-size: 32px; margin-bottom: 40px; font-weight: 500;">Featured collection</h2>
+    
+    <div class="product-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px;">
+                                <div class="product-card" style="text-align: left;">
+                <a href="ftune-combo-kit.html">
+                    <div class="product-image-wrapper" style="background-color: #f7f9f8; height: 220px; display: flex; align-items: center; justify-content: center; position: relative; margin-bottom: 15px; border-radius: 10px;">
+                                                    <span class="badge" style="background-color: #4A6FFF; color: white; padding: 4px 12px; border-radius: 20px; font-size: 10px; position: absolute; bottom: 10px; left: 10px;">Sale</span>
+                                                <img src="assets/images/product1.jpeg" alt="Ftune Combo Kit" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+                    </div>
+                    <div class="product-title" style="font-size: 13px; margin-top: 10px; margin-bottom: 5px; font-weight: 400; color: #333; min-height: 35px; line-height: 1.4;">Ftune Combo Kit</div>
+                    <div class="product-price-wrapper" style="margin-bottom: 15px;">
+                                                    <span class="old-price" style="text-decoration: line-through; color: #888; font-size: 12px; margin-right: 5px;">Rs. 1,499.00</span>
+                            <span class="new-price" style="font-size: 14px; color: #000;">Rs. 1,291.00</span>
+                                            </div>
+                </a>
+                <form action="cart.html" method="POST">
+                    <input type="hidden" name="action" value="add">
+                    <input type="hidden" name="product_id" value="1">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="btn btn-outline" style="width: 100%; border-radius: 30px; border: 1px solid var(--primary-green); color: var(--primary-green); padding: 8px; font-size: 13px; background: transparent; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--primary-green)'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--primary-green)';">Add to cart</button>
+                </form>
+            </div>
+                                <div class="product-card" style="text-align: left;">
+                <a href="vitamin-c-facewash.html">
+                    <div class="product-image-wrapper" style="background-color: #f7f9f8; height: 220px; display: flex; align-items: center; justify-content: center; position: relative; margin-bottom: 15px; border-radius: 10px;">
+                                                    <span class="badge" style="background-color: #4A6FFF; color: white; padding: 4px 12px; border-radius: 20px; font-size: 10px; position: absolute; bottom: 10px; left: 10px;">Sale</span>
+                                                <img src="assets/images/product1.jpeg" alt="5Five Tune Vitamin C Facewash" style="max-height: 80%; max-width: 80%; object-fit: contain;">
+                    </div>
+                    <div class="product-title" style="font-size: 13px; margin-top: 10px; margin-bottom: 5px; font-weight: 400; color: #333; min-height: 35px; line-height: 1.4;">5Five Tune Vitamin C Facewash</div>
+                    <div class="product-price-wrapper" style="margin-bottom: 15px;">
+                                                    <span class="old-price" style="text-decoration: line-through; color: #888; font-size: 12px; margin-right: 5px;">Rs. 499.00</span>
+                            <span class="new-price" style="font-size: 14px; color: #000;">Rs. 399.00</span>
+                                            </div>
+                </a>
+                <form action="cart.html" method="POST">
+                    <input type="hidden" name="action" value="add">
+                    <input type="hidden" name="product_id" value="2">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="btn btn-outline" style="width: 100%; border-radius: 30px; border: 1px solid var(--primary-green); color: var(--primary-green); padding: 8px; font-size: 13px; background: transparent; cursor: pointer; transition: all 0.3s ease;" onmouseover="this.style.backgroundColor='var(--primary-green)'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='transparent'; this.style.color='var(--primary-green)';">Add to cart</button>
+                </form>
+            </div>
+            </div>
+</section>
+
+<!-- Sticky Bottom Add to Cart Bar -->
+<div class="sticky-add-to-cart">
+    <div class="sticky-product-info">
+        <img src="assets/images/product1.jpeg" alt="Product Thumbnail">
+        <div>
+            <div style="font-size: 14px; font-weight: 500;">5Five Tune Whitening Cream</div>
+            <div style="font-size: 14px;">
+                                    <span style="text-decoration: line-through; color: var(--text-muted); font-size: 12px; margin-right: 5px;">Rs. 899.00</span>
+                    <span style="font-weight: 600;">Rs. 799.00</span>
+                    <span style="background-color: #4A6FFF; color: white; font-size: 10px; padding: 2px 6px; border-radius: 10px; margin-left: 5px;">Sale</span>
+                            </div>
+        </div>
+    </div>
+    
+    <div class="sticky-actions">
+        <div class="qty-selector" style="margin-bottom: 0; background: white;">
+            <button type="button" class="qty-btn" onclick="document.getElementById('sticky-qty').value = Math.max(1, parseInt(document.getElementById('sticky-qty').value) - 1)">-</button>
+            <input type="text" id="sticky-qty" class="qty-input" value="1" readonly>
+            <button type="button" class="qty-btn" onclick="document.getElementById('sticky-qty').value = parseInt(document.getElementById('sticky-qty').value) + 1">+</button>
+        </div>
+        <form action="cart.html" method="POST" style="margin: 0;">
+            <input type="hidden" name="action" value="add">
+            <input type="hidden" name="product_id" value="3">
+            <input type="hidden" name="quantity" value="1" id="sticky-form-qty">
+            <button type="submit" class="btn btn-solid" style="padding: 10px 30px; border-radius: 30px;" onclick="document.getElementById('sticky-form-qty').value = document.getElementById('sticky-qty').value">Add to cart</button>
+        </form>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h5>Quick links</h5>
+            <ul>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="track.html">Track Order</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>Info</h5>
+            <ul>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cancellation and Refund Policies</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>Our promise</h5>
+            <p style="font-size: 13px; color: var(--text-muted);">5Five Tune is committed to responsible beauty. We offer 100% results on all skin types.</p>
+        </div>
+        <div class="footer-col">
+            <h5>Subscribe to our emails</h5>
+            <form action="subscribe.html" method="POST" style="position: relative;">
+                <input type="email" name="email" placeholder="Email" required style="padding-right: 40px;">
+                <button type="submit" style="position: absolute; right: 10px; top: 10px; background: none; border: none; cursor: pointer; color: var(--text-dark);">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 40px;">
+            <p>&copy; 2026, 5Five Tune</p>
+            <div style="font-size: 18px;">
+                <a href="#" style="margin-left: 15px;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="margin-left: 15px;"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" style="margin-left: 15px;"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Floating WhatsApp Icon (as seen in screenshots) -->
+    <a href="https://wa.me/918980344868" target="_blank" style="position: fixed; bottom: 30px; right: 30px; background-color: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 35px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); z-index: 1000;">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

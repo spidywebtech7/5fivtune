@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5Five Tune - Premium Skincare & Beauty</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div style="background-color: #318000; color: white; padding: 8px 0; overflow: hidden; white-space: nowrap;">
+    <marquee behavior="scroll" direction="left" scrollamount="6" style="font-size: 13px; font-weight: 600; letter-spacing: 1px;">
+        ðŸš€ PAY ONLINE AND GET FREE SHIPPING ON ALL ORDERS! ðŸš€
+    </marquee>
+</div>
+<header class="site-header">
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/logo.jpeg" alt="5Five Tune Logo">
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="track.html">Track Order</a></li>
+                <li><a href="how-to-use.html">How To Use</a></li>
+                <li><a href="shop.html">Products</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+                            <a href="login.html"><i class="far fa-user"></i></a>
+                        <a href="cart.html" style="position: relative;">
+                <i class="fas fa-shopping-bag"></i>
+                <span style="position: absolute; top: -8px; right: -10px; background-color: var(--primary-green); color: white; font-size: 10px; width: 16px; height: 16px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: bold;">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero-section" style="padding: 0; min-height: auto;">
+    <div style="width: 100%;">
+        <img src="c619675a-b07a-4f33-b656-50c611bd72f9.png" alt="Skincare Kit" style="width: 100%; display: block; height: auto;">
+    </div>
+</section>
+
+<!-- Featured Collection -->
+<section class="collection-section">
+    <h2 class="section-title">Featured collection</h2>
+    <div class="product-grid">
+                    <div class="product-card">
+                <a href="ftune-combo-kit.html">
+                    <div class="product-image-wrapper">
+                        <span class="badge">Sale</span>
+                        <img src="assets/images/product1.jpeg" alt="Ftune Combo Kit">
+                    </div>
+                    <div class="product-title">Ftune Combo Kit</div>
+                    <div class="product-price-wrapper">
+                                                    <span class="old-price">Rs. 1,499.00</span>
+                            <span class="new-price">Rs. 1,291.00</span>
+                                            </div>
+                </a>
+                <form action="cart.html" method="POST">
+                    <input type="hidden" name="action" value="add">
+                    <input type="hidden" name="product_id" value="1">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="btn btn-outline" style="width: 100%;">Add to cart</button>
+                </form>
+            </div>
+                    <div class="product-card">
+                <a href="vitamin-c-facewash.html">
+                    <div class="product-image-wrapper">
+                        <span class="badge">Sale</span>
+                        <img src="assets/images/product1.jpeg" alt="5Five Tune Vitamin C Facewash">
+                    </div>
+                    <div class="product-title">5Five Tune Vitamin C Facewash</div>
+                    <div class="product-price-wrapper">
+                                                    <span class="old-price">Rs. 499.00</span>
+                            <span class="new-price">Rs. 399.00</span>
+                                            </div>
+                </a>
+                <form action="cart.html" method="POST">
+                    <input type="hidden" name="action" value="add">
+                    <input type="hidden" name="product_id" value="2">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="btn btn-outline" style="width: 100%;">Add to cart</button>
+                </form>
+            </div>
+                    <div class="product-card">
+                <a href="whitening-cream.html">
+                    <div class="product-image-wrapper">
+                        <span class="badge">Sale</span>
+                        <img src="assets/images/product1.jpeg" alt="5Five Tune Whitening Cream">
+                    </div>
+                    <div class="product-title">5Five Tune Whitening Cream</div>
+                    <div class="product-price-wrapper">
+                                                    <span class="old-price">Rs. 899.00</span>
+                            <span class="new-price">Rs. 799.00</span>
+                                            </div>
+                </a>
+                <form action="cart.html" method="POST">
+                    <input type="hidden" name="action" value="add">
+                    <input type="hidden" name="product_id" value="3">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="btn btn-outline" style="width: 100%;">Add to cart</button>
+                </form>
+            </div>
+            </div>
+</section>
+
+<!-- Our Products -->
+<section class="collection-section">
+    <h2 class="section-title">Our Products</h2>
+    <div class="our-products-grid">
+        <!-- Mock Card 1 -->
+        <div class="feature-card" onclick="window.location.href='vitamin-c-facewash.html'" style="cursor: pointer;">
+            <div class="image-container">
+                <img src="assets/images/product1.jpeg" alt="Facewash">
+            </div>
+            <h4>5Five Tune Vitamin C Facewash</h4>
+            <ul class="feature-list">
+                <li><i class="fas fa-check-square"></i> Deep Cleansing.</li>
+                <li><i class="fas fa-check-square"></i> Brighten Skin Tone.</li>
+                <li><i class="fas fa-check-square"></i> Antioxidant Protection.</li>
+                <li><i class="fas fa-check-square"></i> Refreshes and Revitalizes.</li>
+                <li><i class="fas fa-check-square"></i> Nourishment and Hydration.</li>
+            </ul>
+            <div style="text-align: center;">
+                <a href="vitamin-c-facewash.html" class="btn btn-solid">Buy Now</a>
+            </div>
+        </div>
+        <!-- Mock Card 2 -->
+        <div class="feature-card" onclick="window.location.href='whitening-cream.html'" style="cursor: pointer;">
+            <div class="image-container">
+                <img src="assets/images/product2.jpeg" alt="Cream">
+            </div>
+            <h4>5Five Tune Whitening Cream</h4>
+            <ul class="feature-list">
+                <li><i class="fas fa-check-square"></i> Whitens Skin.</li>
+                <li><i class="fas fa-check-square"></i> Removes Acne.</li>
+                <li><i class="fas fa-check-square"></i> Removes Dark Spot.</li>
+                <li><i class="fas fa-check-square"></i> Whitens Dark Knuckles.</li>
+                <li><i class="fas fa-check-square"></i> Removes Under Eye Dark Circles.</li>
+            </ul>
+            <div style="text-align: center;">
+                <a href="whitening-cream.html" class="btn btn-solid">Buy Now</a>
+            </div>
+        </div>
+        <!-- Mock Card 3 -->
+        <div class="feature-card" onclick="window.location.href='ftune-combo-kit.html'" style="cursor: pointer;">
+            <div class="image-container">
+                <img src="assets/images/product1.jpeg" alt="Sunscreen">
+            </div>
+            <h4>Ftune Combo Kit</h4>
+            <ul class="feature-list">
+                <li><i class="fas fa-check-square"></i> Daily Defense.</li>
+                <li><i class="fas fa-check-square"></i> Non-Greasy Formula.</li>
+                <li><i class="fas fa-check-square"></i> Sun Damage Prevention.</li>
+                <li><i class="fas fa-check-square"></i> Moisturization and Hydration.</li>
+                <li><i class="fas fa-check-square"></i> Protection From UVA&UVB rays.</li>
+            </ul>
+            <div style="text-align: center;">
+                <a href="ftune-combo-kit.html" class="btn btn-solid">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px;">
+        <a href="shop.html" class="btn btn-outline" style="margin-right: 10px;">Show More</a>
+        <a href="shop.html" class="btn btn-solid">Buy Now</a>
+    </div>
+</section>
+
+<!-- Best Skin Care Section -->
+<section class="text-block-section">
+    <h2 style="font-size: 28px; margin-bottom: 10px;">Best skin care products</h2>
+    <p style="font-size: 12px; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;">IN INDIA</p>
+    
+    <p>We believe healthy skin is achievable for everyone. A good skincare routine should be simple. A few things that help you in the long run - cleanse, moisturize, and protect.</p>
+    
+    <p>5Five products help you with perfect moisturization nourishing your skin without harming the skin barrier. We deliver results with perfectly formulated products. We stand out in the crowd and provide you best skin care products in India, they help you achieve flawless skin. Are you someone looking for even-toned skin? Our best-selling whitening cream is backed by over 1000 + reviews and we've sold over 1 million products. Some of the impressive main ingredients present in the cream are Turmeric, Sandal Extraction, and Niacinamide.</p>
+    
+    <a href="shop.html" class="btn btn-solid" style="margin-top: 20px;">Buy Now</a>
+</section>
+
+<!-- How To Use -->
+<section class="collection-section" id="how-to-use">
+    <h2 class="section-title" style="text-align: center; margin-bottom: 10px;">How To use</h2>
+    <p style="text-align: center; font-size: 12px; letter-spacing: 2px; color: var(--text-muted); margin-bottom: 50px;">5FIVE TUNE FOR DAILY USE</p>
+
+    <!-- Day Routine -->
+    <h3 style="margin-bottom: 20px;">Day Routine</h3>
+    <div class="routine-grid">
+        <div class="routine-step">
+            <img src="assets/images/routine_1.jpg" alt="Wash">
+            <div class="routine-info">
+                <h4>Wash</h4>
+                <p>Wash Your Face With 5Five Tune Vitamin C Facewash.</p>
+            </div>
+        </div>
+        <div class="routine-step">
+            <img src="assets/images/routine_4.jpg" alt="Dry">
+            <div class="routine-info">
+                <h4>Dry</h4>
+                <p>Pat dry your face with a clean towel.</p>
+            </div>
+        </div>
+        <div class="routine-step">
+            <img src="2_copy_27b26a4d-d63e-491e-ae5e-ea3881111c4a.webp" alt="Apply">
+            <div class="routine-info">
+                <h4>Apply</h4>
+                <p>Take required amount of 5Five Tune Sunscreen + Moisturizer and apply it evenly to your face and exposed areas.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Night Routine -->
+    <h3 style="margin-bottom: 20px; text-align: center;">Night Routine</h3>
+    <div class="routine-grid" style="max-width: 900px; margin: 0 auto 40px;">
+        <div class="routine-step">
+            <img src="assets/images/routine_4.jpg" alt="Wash and Dry">
+            <div class="routine-info">
+                <h4>Wash And Dry</h4>
+                <p>Wash Your Face With 5Five Tune Vitamin C Facewash and dry your face.</p>
+            </div>
+        </div>
+        <div class="routine-step">
+            <img src="2_copy_27b26a4d-d63e-491e-ae5e-ea3881111c4a.webp" alt="Apply">
+            <div class="routine-info">
+                <h4>Apply</h4>
+                <p>Apply 5Five Tune Whitening cream evenly to your face.</p>
+            </div>
+        </div>
+        <div class="routine-step">
+            <img src="assets/images/routine_1.jpg" alt="Wash">
+            <div class="routine-info">
+                <h4>Wash</h4>
+                <p>Wash your face with 5Five Tune Facewash on using water.</p>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-bottom: 80px;">
+        <a href="shop.html" class="btn btn-outline" style="margin-right: 10px;">Show More</a>
+        <a href="shop.html" class="btn btn-solid">Buy Now</a>
+    </div>
+</section>
+
+<!-- Instagram & Blog -->
+<section style="text-align: center; margin-bottom: 80px;">
+    <h3 style="font-size: 20px; text-transform: uppercase; margin-bottom: 15px;">FOLLOW US ON INSTAGRAM</h3>
+    <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 20px;">Join our Instagram community and be the first to discover skincare secrets and exclusive offers.</p>
+    <a href="#" class="btn btn-solid" style="border-radius: 5px;">Join Us</a>
+</section>
+
+<section class="collection-section" style="padding-top: 0;">
+    <h3 style="font-size: 20px; margin-bottom: 30px;">Blog posts</h3>
+    <div class="blog-grid">
+        <div class="blog-card">
+            <h4>Best Whitening Cream For Brighter Skin: What To...</h4>
+            <p>Do you desire the best skin whitening cream to achieve that glowing, even-toned skin? There are literally thousands of products that you can discover in the Indian skincare market...</p>
+        </div>
+        <div class="blog-card">
+            <h4>Best Whitening Cream In India : Does It Work Fo...</h4>
+            <p>In pursuit of glowing, fair skin complexion, Indians tend to approach skin whitening creams with high hopes and expectations. The market is filled with products that promise overnight miracles in...</p>
+        </div>
+        <div class="blog-card">
+            <h4>Best Skin Whitening Cream For Different Skin Ty...</h4>
+            <p>Discovering the best skin whitening cream is a job like searching for a needle in a haystack. With all the products that fill the market, how do you even begin...</p>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="blog.html" class="btn btn-solid" style="border-radius: 5px; padding: 10px 30px;">View all</a>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-col">
+            <h5>Quick links</h5>
+            <ul>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="track.html">Track Order</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>Info</h5>
+            <ul>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cancellation and Refund Policies</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h5>Our promise</h5>
+            <p style="font-size: 13px; color: var(--text-muted);">5Five Tune is committed to responsible beauty. We offer 100% results on all skin types.</p>
+        </div>
+        <div class="footer-col">
+            <h5>Subscribe to our emails</h5>
+            <form action="subscribe.html" method="POST" style="position: relative;">
+                <input type="email" name="email" placeholder="Email" required style="padding-right: 40px;">
+                <button type="submit" style="position: absolute; right: 10px; top: 10px; background: none; border: none; cursor: pointer; color: var(--text-dark);">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 40px;">
+            <p>&copy; 2026, 5Five Tune</p>
+            <div style="font-size: 18px;">
+                <a href="#" style="margin-left: 15px;"><i class="fab fa-instagram"></i></a>
+                <a href="#" style="margin-left: 15px;"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" style="margin-left: 15px;"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Floating WhatsApp Icon (as seen in screenshots) -->
+    <a href="https://wa.me/918980344868" target="_blank" style="position: fixed; bottom: 30px; right: 30px; background-color: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 35px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); z-index: 1000;">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
