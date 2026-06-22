@@ -688,3 +688,62 @@ details[open] summary::after {
     align-items: center;
     gap: 20px;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+    }
+    #mobile-menu-toggle {
+        display: block !important;
+    }
+    .main-nav {
+        order: 4;
+        width: 100%;
+        display: none;
+    }
+    .main-nav.active {
+        display: block;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+        background: var(--white);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+    
+    .product-grid,
+    .our-products-grid,
+    .routine-grid,
+    .blog-grid,
+    .footer-container {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+    
+    .footer-bottom > div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Cart and Checkout responsiveness */
+    .cart-wrapper,
+    .checkout-wrapper {
+        flex-direction: column !important;
+    }
+    
+    /* Track order elements */
+    .track-wrapper {
+        flex-direction: column !important;
+    }
+}

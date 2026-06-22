@@ -38,6 +38,9 @@
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
+        <div class="mobile-menu-toggle" id="mobile-menu-toggle" style="display: none; font-size: 24px; cursor: pointer;">
+            <i class="fas fa-bars"></i>
+        </div>
         <div class="header-icons">
             <a href="#"><i class="fas fa-search"></i></a>
                             <a href="login.html"><i class="far fa-user"></i></a>
@@ -337,5 +340,16 @@
 
 <!-- Scripts -->
 <script src="assets/js/main.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggle = document.getElementById('mobile-menu-toggle');
+        const nav = document.querySelector('.main-nav');
+        if(toggle && nav) {
+            toggle.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+        }
+    });
+</script>
 </body>
 </html>
